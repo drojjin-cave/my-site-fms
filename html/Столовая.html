@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт - путеводитель по интересным местам ФМШ СФУ</title>
+    <link rel="Stylesheet" href="дизайн.css">
+    <link rel="Stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-row">
+                <div class="image-container">
+                    <img src="./Сайт для индивидуального проекта/лого/три полоски без фона.png" alt="Картинка" class="image" onclick="toggleMenu()">
+                    <div class="dropdown" id="dropdownMenu">
+                        <a href="сайт.html" class="menu">Главная страница</a>
+                        <a href="Цокольный этаж.html" class="menu">Цокольный этаж</a>
+                        <a href="#link3" class="menu">Первый этаж</a>
+                    </div>
+                </div>
+                
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("dropdownMenu");
+                        if (menu.style.display === "block") {
+                            menu.style.display = "none";
+                        } else {
+                            menu.style.display = "block";
+                        }
+                    }
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.image')) {
+                            var dropdowns = document.getElementsByClassName("dropdown");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.style.display === "block") {
+                                    openDropdown.style.display = "none";
+                                }
+                            }
+                        }
+                    }
+                </script>
+                <img class="logo" src="./Сайт для индивидуального проекта/лого/Монтажная область 1@2x.png">
+                <p class="zagl"> Сайт - путеводитель по интересным местам ФМШ СФУ </p>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <p class="vstr"> Столовая</p>
+    <p class="vstr2"> Как назвать комнату, которая в школе важнее всего? Конечно же столовая! После посещения этого места ученики нашей школы почти никогда не остаются голодными, ведь блюда здесь очень вкусные, а главное полезные для организма и поддержания жизненных сил!</p>
+    <p class="vstr2"> Меню здесь цикличное: оно повторяется каждые две недели, что говорит нам о большом разнообразии блюд, салатов, фруктов, печенья и многого другого! При его ежегодном составлении обязательно учитываются пожелания учеников, ведь для ФМШ СФУ благополучие школьников - высший приоритет! </p>
+    <p class="vstr2"> Столовая разделена на две зоны - главную и буфетную. При проведении в нашей школе различных олимпиад (а они проходят у нас часто) столовая снабжает едой не только учеников ФМШ СФУ, но и приезжающих к нам олимпиадников. Для них в буфетной зоне накрывают целые столы и выдают те же самые блюда, что и учащимся школы.</p>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт - путеводитель по интересным местам ФМШ СФУ</title>
+    <link rel="Stylesheet" href="дизайн.css">
+    <link rel="Stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-row">
+                <div class="image-container">
+                    <img src="./Сайт для индивидуального проекта/лого/три полоски без фона.png" alt="Картинка" class="image" onclick="toggleMenu()">
+                    <div class="dropdown" id="dropdownMenu">
+                        <a href="сайт.html" class="menu">Главная страница</a>
+                        <a href="Цокольный этаж.html" class="menu">Цокольный этаж</a>
+                        <a href="#link3" class="menu">Первый этаж</a>
+                    </div>
+                </div>
+                
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("dropdownMenu");
+                        if (menu.style.display === "block") {
+                            menu.style.display = "none";
+                        } else {
+                            menu.style.display = "block";
+                        }
+                    }
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.image')) {
+                            var dropdowns = document.getElementsByClassName("dropdown");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.style.display === "block") {
+                                    openDropdown.style.display = "none";
+                                }
+                            }
+                        }
+                    }
+                </script>
+                <img class="logo" src="./Сайт для индивидуального проекта/лого/Монтажная область 1@2x.png">
+                <p class="zagl"> Сайт - путеводитель по интересным местам ФМШ СФУ </p>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <p class="vstr"> Тренажёрный зал и фитнес-зал</p>
+        <p class="vstr2">В нашей школе тренажёрный зал - это очень важное место для отдыха от ежедневных забот и физико-математических нагрузок. Множество школьников и даже выпускников приходят сюда для того, чтобы поддерживать свою физическую форму и не ограничивать свою жизнь одиними лишь учебниками. Тренажерный зал в физико-математической школе обладает такой популярностью, что в один из обычных дней сюда на занятия пришли целых 52 человека!</p>
+        <p class="vstr2">В тренажерном зале находится 21 тренажёр со свободном весом, несколько беговых дорожек, велотренажёров и эллипсов. Каждый из них развивает совершенно разную группу мышц, что способствует укреплению полностью всего организма. Интересно, что здесь нет ни одного тренажера, который бы простаивал без дела, все они вносят свой вклад в спортивные достижения и форму ребят.</p>
+        <p class="vstr2">Здесь же, рядом с тренажёрами, находится не менее полезное место - фитнес-зал. Тут каждую неделю проходят занятия по фитнесу, двери на которые открыты не только для девушек, но и для парней. Зал полностью оснащен оборудованием для занятия фитнесом, растяжкой и гимнастикой.</p>
+        <p class="vstr2">В наших залах каждый обучающийся найдет для себя тренажер по душе!</p>
+    </div>

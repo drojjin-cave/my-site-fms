@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт - путеводитель по интересным местам ФМШ СФУ</title>
+    <link rel="Stylesheet" href="дизайн.css">
+    <link rel="Stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-row">
+                <div class="image-container">
+                    <img src="./Сайт для индивидуального проекта/лого/три полоски без фона.png" alt="Картинка" class="image" onclick="toggleMenu()">
+                    <div class="dropdown" id="dropdownMenu">
+                        <a href="сайт.html" class="menu">Главная страница</a>
+                        <a href="Цокольный этаж.html" class="menu">Цокольный этаж</a>
+                        <a href="#link3" class="menu">Первый этаж</a>
+                    </div>
+                </div>
+                
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("dropdownMenu");
+                        if (menu.style.display === "block") {
+                            menu.style.display = "none";
+                        } else {
+                            menu.style.display = "block";
+                        }
+                    }
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.image')) {
+                            var dropdowns = document.getElementsByClassName("dropdown");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.style.display === "block") {
+                                    openDropdown.style.display = "none";
+                                }
+                            }
+                        }
+                    }
+                </script>
+                <img class="logo" src="./Сайт для индивидуального проекта/лого/Монтажная область 1@2x.png">
+                <p class="zagl"> Сайт - путеводитель по интересным местам ФМШ СФУ </p>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <p class="vstr"> Цокольный этаж</p>
+        <img class="carta" src="./Сайт для индивидуального проекта/карты/Group 12 (2).png">
+        <p class="vstr">Пройдемся по крутым местам!</p>
+        <a id="m" href="Зал настольного тенниса.html"> Зал настольного тенниса</a>
+        <img class="fms" src="./Сайт для индивидуального проекта/фотки мест/photo_2025-02-14_20-59-01_Nero AI_Photo.jpeg">
+        <a id="m" href="Тренажёрный зал.html"> Тренажерный зал и фитнес-зал</a>
+        <img class="fms" src="./Сайт для индивидуального проекта/фотки мест/photo_2025-02-14_20-59-14_Nero AI_Photo.jpeg">
+        <a id="m" href="Столовая.html"> Столовая</a>
+        <img class="fms" src="./Сайт для индивидуального проекта/фотки мест/photo_2025-02-12_17-35-52 (2)_Nero AI_Photo.jpeg">
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "GentiumPlus";
+    src: url(GentiumPlus-Regular.ttf);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.fms {
+    max-width: 1390px;
+    width: 100%;
+    border-radius: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.logo {
+    object-fit: cover;
+    height: 100px;
+}
+.zagl {
+    color: darkgreen;
+    font-family:"GentiumPlus";
+    font-size: 49px;
+    line-height: 43px;
+    text-align: center;
+}
+.header {
+    display: flex;
+    padding-top: 10px;
+    height: 120px;
+}
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: underline;
+    color: darkgreen;
+    font-family:"GentiumPlus";
+    font-size: 53px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 43px;
+}
+hr {
+    background-color: #413535;
+    border: 0;
+    height: 5px;
+    width: 100%;
+}
+.vstr {
+    color: #413535;
+    font-size: 53px;
+    font-family: "GentiumPlus";
+    line-height: 43px;
+    padding-top: 30px;
+    text-align: center;
+}
+.vstr2 {
+    color: #413535;
+    font-family: "GentiumPlus";
+    font-size: 36px;
+    text-align: center;
+    padding: 0 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    line-height: 30px;
+}
+.foto {
+    background-color: gray;
+    height: 800px;
+    max-width: 1400px;
+    width: 100%;
+    border-radius: 90px;
+}
+.carta {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 15px;
+}
+#m {
+    padding-top: 20px;
+}
+.image-container {
+    position: relative;
+}
+.image {
+    width: 55px;
+    height: auto;
+    padding-right: 3px;
+    min-height: 30px;
+    min-width: 55px;
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dropdown a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 180px;
+}
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+.menu {
+    font-family: "GentiumPlus";
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+@media (max-width:835px) {
+    .zagl {
+        font-size: 40px;
+    }
+    .fms {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    a {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 705px) {
+    .header {
+        height: 130px;
+        padding-top: 7px;
+    }
+    .image-container {
+        position: relative;
+        bottom: 10px;
+    }
+    .image {
+        min-width: 40px;
+    }
+    .carta {
+        padding-bottom: 0px;
+    }
+    .vstr2 {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .vstr {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .zagl {
+        line-height: 31px;
+        font-size: 38px ;
+    }
+    a {
+        font-size: 40px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .logo {
+        height: 110px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .fms {
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 503px) {
+    .zagl {
+        font-size: 35px;
+    }
+    .header {
+        height: 145px;
+    }
+    .logo {
+        height: 117px;
+    }
+    .image {
+        position: relative;
+        bottom: 20px;
+    }
+    .fms {
+        border-radius: 40px;
+    }
+    #m {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .zagl {
+        font-size: 30px;
+    }
+    .vstr2 {
+        font-size: 27px;
+    }
+}
+@media (max-width: 406px) {
+    .zagl {
+        font-size: 27px;
+    }
+    .image {
+        position: relative;
+        bottom: 20px;
+    }
+}
+@media (max-width: 383px) {
+    .logo {
+        height: 120px;
+        position: relative;
+        right: 20px;
+    }
+    .zagl {
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .header {
+        height: 140px;
+    }
+}
